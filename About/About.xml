@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Multiplayer Wolfein extension:"Little Red Riding Hood" Patch</name>
+	<author>Keullaeseu</author>
+	<packageId>keullaeseu.multiplayer.heimu.LittleRedRidingHood</packageId>
+	<modVersion>1.0.0.0</modVersion>
+	<url>https://github.com/Keullaeseu/Multiplayer-WolfeinExtension-Little-Red-Riding-Hood-Patch</url>
+	<description>Provides multiplayer support for the Wolfein extension:"Little Red Riding Hood" mod by heimu.</description>
+
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+
+	<loadAfter>
+		<li>rwmt.Multiplayer</li>
+		<li>keullaeseu.multiplayerthegrandlibraryofmirroredpatch</li>
+		<li>heimu.LittleRedRidingHood</li>
+	</loadAfter>
+
+	<modDependencies>
+		<li>
+			<packageId>rwmt.Multiplayer</packageId>
+			<displayName>Multiplayer</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2606448745</steamWorkshopUrl>
+			<downloadUrl>https://github.com/rwmt/Multiplayer/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>heimu.LittleRedRidingHood</packageId>
+			<displayName>Wolfein extension:"Little Red Riding Hood"</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3698641606</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>keullaeseu.multiplayerthegrandlibraryofmirroredpatch</packageId>
+			<displayName>Multiplayer The Grand Library of 「Mirrored」 Patch</displayName>
+			<downloadUrl>https://github.com/Keullaeseu/Multiplayer-The-Grand-Library-of-Mirrored-Patch/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
+</ModMetaData>
