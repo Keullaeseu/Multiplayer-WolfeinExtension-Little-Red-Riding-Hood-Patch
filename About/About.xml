@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>Multiplayer Wolfein extension:"Little Red Riding Hood" Patch</name>
 	<author>Keullaeseu</author>
-	<packageId>keullaeseu.multiplayer.heimu.LittleRedRidingHood</packageId>
+	<packageId>keullaeseu.mp.heimu.LittleRedRidingHood</packageId>
 	<modVersion>1.0.0.0</modVersion>
 	<url>https://github.com/Keullaeseu/Multiplayer-WolfeinExtension-Little-Red-Riding-Hood-Patch</url>
 	<description>Provides multiplayer support for the Wolfein extension:"Little Red Riding Hood" mod by heimu.</description>
