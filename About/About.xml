@@ -13,7 +13,16 @@
 
 	<loadAfter>
 		<li>rwmt.Multiplayer</li>
-		<li>keullaeseu.multiplayerthegrandlibraryofmirroredpatch</li>
+		<li>Ancot.AncotLibrary</li>
+		<li>keullaeseu.mp.Ancot.AncotLibrary</li>
+		<li>erdelf.HumanoidAlienRaces</li>
+		<li>keullaeseu.mp.erdelf.HumanoidAlienRaces</li>
+		<li>MelonDove.WolfeinRace</li>
+		<li>keullaeseu.mp.MelonDove.WolfeinRace</li>
+		<li>Ancot.WolfeinRaceGenePatch</li>
+		<li>brrainz.harmony</li>
+		<li>heimu.RimMomotalk</li>
+		<li>keullaeseu.mp.heimu.RimMomotalk</li>
 		<li>heimu.LittleRedRidingHood</li>
 	</loadAfter>
 
@@ -25,14 +34,54 @@
 			<downloadUrl>https://github.com/rwmt/Multiplayer/releases/latest</downloadUrl>
 		</li>
 		<li>
-			<packageId>heimu.LittleRedRidingHood</packageId>
-			<displayName>Wolfein extension:"Little Red Riding Hood"</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/3698641606</steamWorkshopUrl>
+			<packageId>Ancot.AncotLibrary</packageId>
+			<displayName>Ancot Library</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2988801276</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>keullaeseu.mp.Ancot.AncotLibrary</packageId>
+			<displayName>Multiplayer Ancot Library Patch</displayName>
+			<downloadUrl>https://github.com/Keullaeseu/Multiplayer-Ancot-Library-Patch/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>erdelf.HumanoidAlienRaces</packageId>
+			<displayName>Humanoid Alien Races</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>keullaeseu.mp.erdelf.HumanoidAlienRaces</packageId>
+			<displayName>Multiplayer Humanoid Alien Races Patch</displayName>
+			<downloadUrl>https://github.com/Keullaeseu/Multiplayer-Humanoid-Alien-Races-Patch/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>MelonDove.WolfeinRace</packageId>
+			<displayName>Wolfein Race</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3473140562</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Ancot.WolfeinRaceGenePatch</packageId>
+			<displayName>Wolfein Race Gene Patch</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3473178683</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>heimu.RimMomotalk</packageId>
+			<displayName>The Grand Library of 「Mirrored」</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3782667656</steamWorkshopUrl>
 		</li>
 		<li>
 			<packageId>keullaeseu.mp.heimu.RimMomotalk</packageId>
 			<displayName>Multiplayer The Grand Library of 「Mirrored」 Patch</displayName>
 			<downloadUrl>https://github.com/Keullaeseu/Multiplayer-The-Grand-Library-of-Mirrored-Patch/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>heimu.LittleRedRidingHood</packageId>
+			<displayName>Wolfein extension:"Little Red Riding Hood"</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3698641606</steamWorkshopUrl>
 		</li>
 	</modDependencies>
 </ModMetaData>
