@@ -1,5 +1,6 @@
 using System.Reflection.Emit;
 using HarmonyLib;
+using Multiplayer.API;
 using Multiplayer.Compat;
 using Verse;
 
@@ -26,8 +27,8 @@ namespace MultiplayerWolfeinExtensionLittleRedRidingHoodPatch.Source.Mods;
 ///         </item>
 ///     </list>
 ///     The raid incident's auto <c>OpenLetter</c> is intentionally left as-is: it fires
-///     in synced incident context on all clients, and the resulting close action is
-///     synced via <c>StartAirstrike</c>.
+///     in synced incident context on all clients, the dialog is registered for node-tree
+///     sync, and the resulting close action is synced via <c>StartAirstrike</c>.
 /// </summary>
 internal static class FriendFromTheWestPatch
 {
@@ -35,6 +36,26 @@ internal static class FriendFromTheWestPatch
     {
         WEReflection.RegisterSyncMethodSafe("Friend_From_the_West.GameComponent_FriendFromTheWest:StartAirstrike");
         WEReflection.RegisterSyncMethodSafe("Friend_From_the_West.GameComponent_FriendFromTheWest:ScheduleRaid");
+
+        // The raid incident auto-opens a Dialog_NodeTreeWithFactionInfo from sim context.
+        // Mark it so Multiplayer routes option clicks through its synced dialog handler.
+        try
+        {
+            var raidWorkerType = AccessTools.TypeByName("Friend_From_the_West.IncidentWorker_RaidFriendFromTheWest");
+            if (raidWorkerType == null)
+            {
+                Log.Warning(
+                    $"{WELittleRedRidingHood.LogPrefix} Could not find type Friend_From_the_West.IncidentWorker_RaidFriendFromTheWest for dialog sync, skipping.");
+                return;
+            }
+
+            MP.RegisterSyncDialogNodeTree(raidWorkerType, "TryExecuteWorker");
+        }
+        catch (Exception exception)
+        {
+            Log.Error(
+                $"{WELittleRedRidingHood.LogPrefix} Failed to register dialog sync for the raid incident: {exception}");
+        }
     }
 
     [MpCompatTranspiler("Friend_From_the_West.GameComponent_FriendFromTheWest", "GameComponentTick")]
